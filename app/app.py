@@ -14,8 +14,7 @@ client_secret = os.getenv("AZURE_CLIENT_SECRET")
 credential = ClientSecretCredential(
     tenant_id=tenant_id,
     client_id=client_id,
-    client_secret=client_secret,
-    additionally_allowed_tenants=["9f7b1444-2ef2-4a08-9f3e-4ba5b8019571"]
+    client_secret=client_secret
 )
 
 vault_url = "https://pkKeyVault12345.vault.azure.net/"
