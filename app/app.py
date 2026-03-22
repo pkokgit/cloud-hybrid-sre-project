@@ -1,12 +1,13 @@
 from flask import Flask
 import socket
+from azure.identity import ClientSecretCredential
+from azure.keyvault.secrets import SecretClient
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    hostname = socket.gethostname()
-    return f"Hybrid SRE Project Running on {hostname}"
+    return {"status": "home"}
 
 @app.route("/health")
 def health():
