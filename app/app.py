@@ -34,7 +34,7 @@ def health():
 
 @app.route("/version")
 def version():
-    return {"version": "v1.0"}
+    return {"version": "v2.0"}
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
