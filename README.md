@@ -45,6 +45,22 @@ Hybrid AWS + Azure project demonstrating DevOps, SRE, and Security (SIEM).
 - Secure secret handling
 - Production-style DevOps workflow
 
+## Phase 6
+- Prometheus + Grafana
+- To do:
+- CloudTrail + GuardDuty → Sentinel
+- SIEM integration
+- Set up Prometheus / Grafana in EKS
+- Connect logs from Flask app / pods
+- Integrate AWS GuardDuty + CloudTrail logs into monitoring dashboard
+- Optional: integrate Azure Monitor metrics
+- Alerts / dashboards for SRE observability
+
+## Phase 7 
+- Remove test secrets from local / GitHub
+- Document architecture, CI/CD workflow, secret management
+- Prepare for interviews / showcase project
+
 ## Endpoints
 - / -> main app
 - /health -> health check
