@@ -22,8 +22,12 @@ client = SecretClient(vault_url=vault_url, credential=credential)
 
 @app.route("/")
 def home():
-    return {"status": "home"}
-
+    try:
+        secret = client.get_secret("db-password").value
+        return f"Secret from Azure Key Vault: {secret}"
+    except Exception as e:
+        return f"Error accessing secret: {str(e)}"
+    
 @app.route("/health")
 def health():
     return {"status": "ok"}
