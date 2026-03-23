@@ -33,6 +33,17 @@ Hybrid AWS + Azure project demonstrating DevOps, SRE, and Security (SIEM).
 - Cross-cloud secret retrieval
 - Identity-based authentication
 
+## Phase 5
+- Docker image builds
+- Image pushed to ECR
+- Kubernetes deployment updated
+- App redeployed in EKS
+- Secrets remain safe (K8s Secrets)
+### Achievement
+- CI/CD pipeline (GitHub Actions)
+- Automated deployment to EKS
+- Secure secret handling
+- Production-style DevOps workflow
 
 ## Endpoints
 - / -> main app
